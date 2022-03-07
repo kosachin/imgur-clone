@@ -91,7 +91,6 @@ getData();
 const allData = JSON.parse(localStorage.getItem("init")) || [];
 
 allData.map((item) => {
-  console.log(item);
   let contentDiv = document.createElement("div");
   contentDiv.setAttribute("class", "contentDiv");
   contentDiv.addEventListener("click", () => {
