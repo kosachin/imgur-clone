@@ -88,7 +88,7 @@ function getData(q = "memes") {
 }
 getData();
 
-const allData = JSON.parse(localStorage.getItem("init"));
+const allData = JSON.parse(localStorage.getItem("init")) || [];
 
 allData.map((item) => {
   console.log(item);
