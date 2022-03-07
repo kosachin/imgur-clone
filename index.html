@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Imgur-clone</title>
+</head>
+
+<body>
+    <div class="bg">
+        <img src="https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png"
+            alt="bg">
+    </div>
+    <header class="navbar">
+        <div class="hamburger-icon">
+            <img src="./imgs/hamburger.svg" alt="hamburger-menu">
+        </div>
+        <div class="left-section">
+            <img src="./imgs/logo.png" alt="imgur-logo" class="logo">
+            <div class="new-post">
+                <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg"
+                    alt="add-post" class="add-post-btn">
+                <button>New post</button>
+            </div>
+        </div>
+        <form class="middle-section" onsubmit="searchQuery(event)">
+            <input type="text" value="" placeholder="Images, #tags, @users oh my!" class="search-bar">
+            <button type="submit">
+                <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg"
+                    alt="search-icon" class="search-icon">
+            </button>
+        </form>
+        <div class="right-section">
+            <button>Go Ad-Free</button>
+            <img src="./imgs/certificate.png" class="certificate-icon">
+            <img src="./imgs/chat.png" class="chat-icon">
+            <img src="./imgs/bell.png" class="bell-icon">
+            <span class="profile-name">kosachin</span>
+            <img src="./imgs/bell.png" class="profile-icon">
+        </div>
+    </header>
+    <div class="quote">Stay true to you.</div>
+    <div class="tags">
+        <div class="exploreTags">EXPLORE TAGS</div>
+        <div class="moreTags">MORE TAGS +</div>
+    </div>
+    <div class="img-container">
+
+    </div>
+    <div class="resultContainer">
+
+    </div>
+    <!-- <img class="test"> -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
